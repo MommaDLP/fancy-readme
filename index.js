@@ -12,12 +12,12 @@ const questions = [
     },
 
     {type:"input",
-        message:"What iss your email address?",
+        message:"What is your email address?",
        name: "userEmail"
     },
 
     {type:"input",
-        message:"What iss your email address?",
+        message:"What is your email address?",
        name: "title"
     },
 
@@ -55,23 +55,22 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.writeToFile(fileName,data, (err) => err
-     ? console.error(err)
-     : console.log('Success!')
-    );
-}
+
+function writeToFile(data) {
+    fs.writeFile("generated-README.md", data, (err)=>{
+        err ? console.error(err) : console.log('Success!')
+    });
+};
+
+
 
 // TODO: Create a function to initialize app
+
 function init() {
-    inquirer
-    .prompt(questions)
-    .then((response) => {
-        let markdown  = generateMarkdown(response)
-        let license = response.license
-        writeToFile('test.md', markdown)
-    }
-)
+    inquirer.prompt(questions).then((data)=> {
+        let markdown = generateMarkdown(data);
+        writeToFile(markdown);
+    });
 }
 
 // Function call to initialize app
