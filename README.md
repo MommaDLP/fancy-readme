@@ -4,9 +4,9 @@
  ## Description
  A README generator that will allow you to input through the terminal to create the file.
 
- ##Links
- <!-- <a href="https://github.com/MommaDLP/fancy-readme"> GitHub Repo</a><br>
-<a href= "https://drive.google.com/file/d/1GfkV_r7DIEW83xM8YqyzYYSUuJzdhVdz/view?usp=sharing">Recorded Video</a> -->
+ ## Links
+ <a href="https://github.com/MommaDLP/fancy-readme"> GitHub Repo</a><br>
+<a href= "https://drive.google.com/file/d/1GfkV_r7DIEW83xM8YqyzYYSUuJzdhVdz/view?usp=sharing">Recorded Video</a>
 
  ## Table of Contents
   [Installation](#Installation)<br>
